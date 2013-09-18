@@ -66,8 +66,8 @@ TestPageLoader.queueTest("input-text-test", function(testPage) {
 
                 });
 
-                it("txt2 should have the element attributes defined by TextInput and NativeControl", function() {
-                    // these attributes are defined at the InputNumber/RangeInput
+                it("txt2 should have the element attributes defined by AbstractControl", function() {
+                    // these attributes are defined at the AbstractControl
                     var instance = testPage.test.txt2;
 
                     expect(instance._getElementAttributeDescriptor('name')).toBeDefined();
