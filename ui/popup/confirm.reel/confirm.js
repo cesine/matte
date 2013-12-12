@@ -165,6 +165,7 @@ var Confirm = exports.Confirm = Component.specialize(/** @lends module:"matte/ui
                 confirm.okLabel = "OK";
                 confirm.cancelLabel = "Cancel";
             } else {
+                popup.title = options.title || 'Confirmation';
                 confirm.msg = options.message;
                 confirm.okLabel = options.okLabel || "OK";
                 confirm.cancelLabel = options.cancelLabel || "Cancel";
